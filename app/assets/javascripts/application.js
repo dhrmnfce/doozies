@@ -15,3 +15,33 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+/*
+$(document).ready(function(){
+    
+  window.onscroll = function() {navFunction()};
+
+    function navFunction() {
+        if (availHeight > 0) {
+            document.getElementsByClassName("navbar").style.height = "105px";
+            document.getElementsByClassName("doozieslogo").style.height = "105px";
+        }
+        else {
+            document.getElementsByClassName("navbar").style.height = "230px";
+            document.getElementsByClassName("doozieslogo").style.height = "200px";
+        }
+        
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementsByClassName("navbar").style.height = "105px";
+            document.getElementsByClassName("doozieslogo").style.height = "105px";
+        } else {
+            document.getElementsByClassName("navbar").style.height = "230px";
+            document.getElementsByClassName("doozieslogo").style.height = "200px";
+        }
+    }  
+    
+    navFunciton();
+    
+});
+
+navFunciton();
+*/

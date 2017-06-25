@@ -1,1 +1,339 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
+
+$blue: #45A2DA;
+$green: #80C342;
+
+.row {
+    margin: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+    &:link {
+        text-decoration: none;
+    }
+}
+
+#page-nav{
+    float: left;
+    padding-top: 135px;
+}
+
+#main-container{
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.logoClear {
+    clear: both;
+}
+
+hr {
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.b{
+    height: 4px;
+    width: 95%;
+    background: $blue;
+}
+
+.g{
+    height: 2px;
+    width: 90%;
+    background: $green;
+}
+
+.mi {
+    line-height: 1em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.menu_cat_p {
+    padding-top: 10px;
+}
+
+.item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition-property: margin;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+.menu_cat{
+    padding-bottom: 15px;
+}
+
+#last_mc{
+    padding-bottom: 20px;
+}
+
+.menu_container{
+    padding-top: 150px;
+    transition-property: padding-top;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+.doozieslogo {
+    background: url('DooziesLogo.png');
+    background-size: 175px 175px;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 175px;
+    border: 0;
+    background-position: center;
+    transition-property: background width height;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+    float: left;
+}
+
+h1.dooziesTextLogo {
+    display: none;
+}
+
+.navbar {
+    height: 230px;
+    transition-property: height;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+.navbar-default {
+    background: white;
+}
+
+.carousel-inner {
+    height: 1000px;
+    transition-property: height;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+.carousel-inner > .item {
+    height: 1000px;
+    margin-top: 100px;
+    &:nth-of-type(1){
+        background: url('Dooz-1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &:nth-of-type(2){
+        background: url('Dooz-2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &:nth-of-type(3){
+        background: url('DooziesCTA.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    transition-property: height;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+.block {
+    height: 1000px;
+    background: pink;
+}
+
+.blick {
+    height: 1000px;
+    background: black;
+}
+
+.about {
+    background: $blue;
+    h1 {
+        font-size: 3em;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 5px black;
+    }
+    p{
+        font-size: 1.25em;
+    }
+}
+
+.hook_row {
+    background: 
+    linear-gradient(
+      rgba(64,162,218,0.5), 
+      rgba(64,162,218,0.75)
+    ), url('DooziesPhoto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    box-shadow: inset 0px 0px 100px black;
+}
+
+.hook_div {
+    padding-top: 100px;
+    h1, h2 {
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        line-height: 150%;
+    }
+    .col-md-12{
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+}
+
+#map {
+    width: 25vw;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.info {
+    padding-bottom: 25px;
+}
+
+.about {
+    padding-bottom: 25px;
+}
+
+.burger {
+    height: 120px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('burger.png');
+    background-position: center;
+    background-size: 150px ;
+    background-repeat: no-repeat;
+}
+
+.icecream {
+    height: 120px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('iceCream.png');
+    background-position: center;
+    background-size: 150px ;
+    background-repeat: no-repeat;
+}
+
+.loc {
+    height: 120px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('DooziesWebIcon.png');
+    background-position: center;
+    background-size: 120px ;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px black;
+}
+
+@media all and (max-width: 1141px) {
+    .carousel-inner {
+        height: 800px;
+    }
+    
+    .carousel-inner > .item {
+        height: 800px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    h1.dooziesTextLogo {
+        display: inline;
+        padding-left: 15px;
+        line-height: 2em;
+    }
+    
+    .navbar {
+        height: 105px;
+    }
+    
+    .carousel-inner {
+        height: 500px;
+    }
+    
+    .carousel-inner > .item {
+        height: 500px;
+        margin-top: 0;
+    }
+    
+    .doozieslogo {
+        background: url('DooziesWebIcon.png');
+        background-size: 75px 75px;
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .menu_container{
+        padding-top: 25px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .carousel-inner {
+        height: 300px;
+    }
+    
+    .carousel-inner > .item {
+        height: 300px;
+    }
+    
+    .hook_div {
+    padding-top: 60px;
+        h1 {
+            font-size: 3.5em;
+        }
+        h2 {
+            font-size: 2.75em;
+        }
+    }
+    
+}
+
+.carousel-control {
+    opacity: .25;
+}
+
+.footer {
+    background: $green;
+    p {
+        opacity: .5;
+    }
+}

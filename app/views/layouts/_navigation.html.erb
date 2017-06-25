@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container logoClear">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="col-md-3 col-md-offset-4">
+      <div class="navbar-header">
+        <%= link_to root_path, class: 'navbar-brand' do %>
+          <div class="doozieslogo"></div>
+          <h1 class="dooziesTextLogo">Doozie&rsquo;s</h1>
+        <% end %>
+      </div>
+    </div>
+    <div class="container" id="page-nav">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="col-xs-2 col-xs-offset-5">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Menu", menu_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
