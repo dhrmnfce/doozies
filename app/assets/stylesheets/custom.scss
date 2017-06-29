@@ -43,6 +43,10 @@ a {
     clear: both;
 }
 
+.navdiv {
+    width: 190px;
+}
+
 hr {
     border: none;
     margin-top: 5px;
@@ -211,7 +215,7 @@ h1.dooziesTextLogo {
 }
 
 #map {
-    width: 25vw;
+    width: 100%;
     height: 250px;
     margin-bottom: 20px;
 }
@@ -270,6 +274,10 @@ h1.dooziesTextLogo {
     
     .carousel-inner > .item {
         height: 800px;
+    }
+    
+    .navdiv {
+        width: 190px;
     }
 }
 
