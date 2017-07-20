@@ -197,7 +197,14 @@ h1.dooziesTextLogo {
 
 .about_seg {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about_col {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .hook_row {
@@ -285,15 +292,13 @@ h1.dooziesTextLogo {
 
 .loc {
     height: 120px;
-    width: 120px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
-    background: url('DooziesWebIcon.png');
+    background: url('location_img.png');
     background-position: center;
-    background-size: 120px ;
+    background-size: 150px ;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 5px black;
-    border-radius: 50%;
 }
 
 @media all and (max-width: 1275px) {
@@ -341,6 +346,17 @@ h1.dooziesTextLogo {
 @media all and (max-width: 991px) {
     .locationdiv{
         padding-top: 20px;
+    }
+    
+    .about_seg {
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .about_col {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
