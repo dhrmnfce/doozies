@@ -139,6 +139,8 @@ h1.dooziesTextLogo {
     background: white;
 }
 
+/*     MAIN CAROUSEL     */
+
 .carousel-inner {
     height: 1000px;
     transition-property: height;
@@ -171,6 +173,50 @@ h1.dooziesTextLogo {
     transition-duration: .25s;
     transition-timing-function: ease-out;
 }
+
+/*     MAIN CAROUSEL END     */
+
+/*     CAKE CAROUSEL     */
+
+#cakeCarouselControls > .carousel-inner {
+    height: 500px;
+    transition-property: height;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+#cakeCarouselControls > .carousel-inner > .item {
+    height: 500px;
+    margin-top: 0px;
+    &:nth-of-type(1){
+        background: url('cake_bcsc.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &:nth-of-type(2){
+        background: url('cake_cacsc.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &:nth-of-type(3){
+        background: url('cake_pgsvb.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    transition-property: height;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+.carousel-caption {
+    padding: 0;
+    line-height: .75em;
+}
+
+/*     CAKE CAROUSEL END     */
 
 .block {
     height: 1000px;
@@ -207,6 +253,46 @@ h1.dooziesTextLogo {
     padding-right: 25px;
 }
 
+.temp_ordersandcakes_row {
+    background:
+    linear-gradient(
+      rgba(255,255,255,0.75), 
+      rgba(255,255,255,.95)
+    ), url('DooziesWebPattern.png');
+    background-position: center;
+    background-size: 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.temp_ordersandcakes_div {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    h1, h2 {
+        color: $blue;
+        line-height: 150%;
+        margin: 0;
+    }
+    .col-md-4{
+        padding: 150px 0px 0px 0px;
+    }
+    .col-md-5{
+        padding: 100px 0px 100px 0px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.25em;
+        padding-top: 10px;
+    }
+}
+
 .hook_row {
     background: 
     linear-gradient(
@@ -216,6 +302,7 @@ h1.dooziesTextLogo {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     box-shadow: inset 0px 0px 100px black;
 }
 
@@ -256,9 +343,10 @@ h1.dooziesTextLogo {
       rgba(255,255,255,.9), 
       rgba(255,255,255,0.75)
     ), url('infobckgrnd.jpg');
-    background-position: center;
+    background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     box-shadow: inset 0px 0px 50px grey;
     .b {
         max-width: 350px;
@@ -301,6 +389,20 @@ h1.dooziesTextLogo {
     background-repeat: no-repeat;
 }
 
+@media all and (max-width: 1400px) {
+    .temp_ordersandcakes_div >.col-md-4 {
+        padding: 100px 0px 0px 0px;
+    }
+    
+    #cakeCarouselControls > .carousel-inner {
+        height: 400px;
+    }
+
+    #cakeCarouselControls > .carousel-inner > .item {
+        height: 400px;
+    }
+}
+
 @media all and (max-width: 1275px) {
     .carousel-inner {
         height: 800px;
@@ -308,6 +410,14 @@ h1.dooziesTextLogo {
     
     .carousel-inner > .item {
         height: 800px;
+    }
+    
+    .temp_ordersandcakes_div >.col-md-4 {
+        padding: 100px 0px 50px 0px;
+    }
+    
+    #cakeCarouselControls {
+        margin-top: 25px;
     }
 }
 
@@ -329,6 +439,12 @@ h1.dooziesTextLogo {
     
     .navdiv {
         width: 190px;
+    }
+}
+
+@media all and (max-width: 1114px) {
+    .temp_ordersandcakes_div >.col-md-5 {
+        padding: 175px 0px 50px 0px;
     }
 }
 
@@ -357,6 +473,26 @@ h1.dooziesTextLogo {
     .about_col {
         padding-left: 40px;
         padding-right: 40px;
+    }
+    
+    .temp_ordersandcakes_div >.col-md-4 {
+        padding: 50px 0px 25px 0px;
+    }
+    
+    .temp_ordersandcakes_div >.col-md-5 {
+        padding: 50px 0px 50px 0px;
+    }
+    
+    #cakeCarouselControls {
+        margin-top: 0px;
+    }
+    
+    #cakeCarouselControls > .carousel-inner {
+        height: 550px;
+    }
+
+    #cakeCarouselControls > .carousel-inner > .item {
+        height: 550px;
     }
 }
 
@@ -416,6 +552,14 @@ h1.dooziesTextLogo {
         .col-md-12{
             padding: 100px 0px 100px 0px;
         }
+    }
+    
+    #cakeCarouselControls > .carousel-inner {
+        height: 400px;
+    }
+
+    #cakeCarouselControls > .carousel-inner > .item {
+        height: 400px;
     }
     
 }
@@ -478,6 +622,14 @@ h1.dooziesTextLogo {
     }
     
     .carousel-inner > .item {
+        height: 300px;
+    }
+    
+    #cakeCarouselControls > .carousel-inner {
+        height: 300px;
+    }
+
+    #cakeCarouselControls > .carousel-inner > .item {
         height: 300px;
     }
     
